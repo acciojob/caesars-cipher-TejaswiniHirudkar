@@ -13,8 +13,9 @@ const lookup = {
 function rot13(encodedStr){
    let decodedArr = []; // Your Result goes here
   // Only change code below this line
+	let keys=Object.key(lookup);
 	for(let i=0; i<encodedStr.length-1; i++){
-		decodedArr[i]=lookup.encodedStr[i];
+		decodedArr[i]=lookup.encodedStr[i].value;
 	}
 
   return decodedArr;//return decodedArr
