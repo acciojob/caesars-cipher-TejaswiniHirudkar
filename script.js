@@ -14,7 +14,7 @@ function rot13(encodedStr){
    let decodedArr = []; // Your Result goes here
   // Only change code below this line
   
-  for (var i = 0; i < str.length; i++) {
+  for (var i = 0; i < encodedStr.length; i++) {
     var char = encodedStr[i];
     var code = encodedStr.charCodeAt(i);
     
