@@ -13,24 +13,15 @@ const lookup = {
 function rot13(encodedStr){
    let decodedArr = []; // Your Result goes here
   // Only change code below this line
-  
-  for (var i = 0; i < encodedStr.length; i++) {
-    var char = encodedStr[i];
-    var code = encodedStr.charCodeAt(i);
-    
-    if (code >= 65 && code <= 90) {  // Check if it's a letter (A-Z)
-      // Apply the ROT13 decoding logic
-      if (code < 78) {
-        char = String.fromCharCode(code + 13);
-      } else {
-        char = String.fromCharCode(code - 13);
-      }
-    }
-    
-    decodedArr.push(char);
+  for(let i=0; i<encodedStr.length; i++){
+	  if(encodedStr.charAt(i)==" "){
+		  decodedArr.push(" ");
+	  }
+	  else{
+		  decodedArr.push(lookup.encodedStr.charAt(i));
+	  }
   }
-	
-
+ 
   return decodedArr;//return decodedArr
 }
 
