@@ -14,11 +14,12 @@ function rot13(encodedStr){
    let decodedArr = []; // Your Result goes here
   // Only change code below this line
   for(let i=0; i<encodedStr.length; i++){
-	  if(encodedStr.charAt(i)==" "){
+	  let char=encodedStr.charAt(i);
+	  if(char==" "){
 		  decodedArr.push(" ");
 	  }
 	  else{
-		  decodedArr.push(lookup.encodedStr.charAt(i));
+		  decodedArr.push(lookup.char);
 	  }
   }
  
